@@ -24,6 +24,11 @@ This repo contains scripts demonstrating core Linux concepts:
    - CPU and memory usage
    - Disk space checking
    - Process management
+   
+4. **disk-monitor.sh**
+   - Monitors root partition disk usage
+   - Alerts if usage > 80% (warning) or > 90% (urgent)
+   - Shows top 5 largest directories in /home
 
 ## Usage
 
