@@ -55,4 +55,20 @@ rm -rf test-files
 echo "   ✓ Test directory removed"
 echo ""
 
+# Important files
+echo "9. Important files..."
+mkdir -p important-files
+touch important-files/file1.txt important-files/file2.txt important-files/file3.txt important-files/file4.txt important-files/file5.txt
+echo "   This is file1" > important-files/file1.txt 
+echo "   This is file2" > important-files/file2.txt 
+echo "   This is file3" > important-files/file3.txt 
+echo "   This is file4" > important-files/file4.txt 
+echo "   This is file5" > important-files/file5.txt 
+ls -lh important-files/
+tar -czf important-files.tar.gz important-files
+rm -r important-files
+echo ""
+echo "   Original directory deleted"
+echo ""
+
 echo "=== Demo Complete ==="
